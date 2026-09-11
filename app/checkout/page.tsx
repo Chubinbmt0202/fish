@@ -408,7 +408,7 @@ export default function CheckoutPage() {
             </button>
 
             <p className="text-[10px] text-center text-slate-500">
-              Nhấn đặt hàng đồng nghĩa bạn đồng ý với chính sách bảo hành cá sống 100% của AquaVibe.
+              Nhấn đặt hàng đồng nghĩa bạn đồng ý với chính sách bảo hành cá sống 100% của GuppyVibe.
             </p>
 
           </div>

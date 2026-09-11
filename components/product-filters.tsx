@@ -58,14 +58,14 @@ export default function ProductFilters({
 
       {/* 1. Keyword Search */}
       <div>
-        <label className="block text-xs font-bold text-slate-700 mb-2">Tìm kiếm tên cá / phụ kiện</label>
+        <label className="block text-xs font-bold text-slate-700 mb-2">Tìm dòng cá 7 màu / phụ kiện</label>
         <div className="relative">
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Cá Rồng, Betta, Tép, Lọc..."
+            placeholder="Full Red, Full Gold, Blue Topaz, Koi..."
             className="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-teal-500 focus:bg-white transition-colors"
           />
         </div>
@@ -73,14 +73,14 @@ export default function ProductFilters({
 
       {/* 2. Category selection */}
       <div>
-        <label className="block text-xs font-bold text-slate-700 mb-2">Danh mục sản phẩm</label>
+        <label className="block text-xs font-bold text-slate-700 mb-2">Phân loại sản phẩm</label>
         <div className="grid grid-cols-2 gap-1.5 text-xs">
           {[
-            { id: 'all', label: 'Tất cả danh mục' },
-            { id: 'fish', label: 'Cá Cảnh Quý' },
-            { id: 'shrimp_snail', label: 'Tép & Ốc' },
-            { id: 'plants', label: 'Cây Thủy Sinh' },
-            { id: 'accessories', label: 'Lọc & Thiết Bị' },
+            { id: 'all', label: 'Tất cả sản phẩm' },
+            { id: 'fish', label: 'Cá 7 Màu Thuần Chủng' },
+            { id: 'accessories', label: 'Lồng Ép & Phụ Kiện' },
+            { id: 'plants', label: 'Rong & Bèo Dưỡng Con' },
+            { id: 'shrimp_snail', label: 'Tép Dọn Đáy Hồ' },
           ].map((cat) => (
             <button
               key={cat.id}

@@ -98,10 +98,10 @@ export default function LiveChatWidget() {
               </div>
               <div>
                 <h4 className="text-xs font-bold text-white flex items-center gap-1.5">
-                  AquaVibe Support Desk
+                  GuppyVibe Trợ Lý Thủy Sinh
                   <span className="w-2 h-2 rounded-full bg-emerald-300"></span>
                 </h4>
-                <p className="text-[11px] text-teal-100 font-medium">Tư vấn thả cá & hỗ trợ đơn hàng</p>
+                <p className="text-[11px] text-teal-100 font-medium">Tư vấn chọn dòng Guppy & ép đẻ</p>
               </div>
             </div>
             <button
@@ -115,9 +115,10 @@ export default function LiveChatWidget() {
           {/* Quick FAQ buttons */}
           <div className="p-2.5 bg-slate-50 border-b border-slate-200 flex gap-1.5 overflow-x-auto text-[11px]">
             {[
-              '🚚 Quy chuẩn đóng gói oxy?',
-              '🐟 Tư vấn cá mới thả hồ?',
-              '⚡ Giao hỏa tốc bao lâu?'
+              '🚚 Quy chuẩn đóng oxy 48h?',
+              '🐟 Tư vấn chọn cá 7 màu?',
+              '🍼 Cách dưỡng cá 7 màu sắp đẻ?',
+              '🦐 Thức ăn lên màu Full Red?'
             ].map((quick, idx) => (
               <button
                 key={idx}
@@ -136,7 +137,7 @@ export default function LiveChatWidget() {
             {messages.length === 0 ? (
               <div className="text-center py-8 text-slate-500 space-y-2">
                 <Droplet className="w-8 h-8 text-teal-600 mx-auto animate-bounce" />
-                <p className="text-xs">Xin chào! Bạn cần hỗ trợ gì về kỹ thuật nuôi cá hoặc đơn hàng?</p>
+                <p className="text-xs">Xin chào! Bạn cần tư vấn dòng cá 7 màu nào hoặc kỹ thuật dưỡng nước, ép đẻ?</p>
               </div>
             ) : (
               messages.map((msg) => {

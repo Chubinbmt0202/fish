@@ -83,10 +83,10 @@ export default function Navbar() {
             </div>
             <div>
               <span className="text-xl font-extrabold bg-gradient-to-r from-teal-700 via-cyan-600 to-teal-800 bg-clip-text text-transparent">
-                AquaVibe
+                GuppyVibe
               </span>
               <span className="block text-[10px] text-teal-600 font-bold tracking-wider uppercase -mt-1">
-                Thủy Cung Xanh & Cá Cảnh
+                Trại Cá 7 Màu Thuần Chủng
               </span>
             </div>
           </Link>
@@ -97,25 +97,25 @@ export default function Navbar() {
               href="/products" 
               className={`transition-colors hover:text-teal-600 ${pathname === '/products' ? 'text-teal-600 font-bold' : 'text-slate-700'}`}
             >
-              Cửa Hàng Thủy Sinh
+              Cửa Hàng Guppy
             </Link>
             <Link 
-              href="/products?waterType=freshwater" 
+              href="/products?category=fish" 
               className="text-slate-700 hover:text-teal-600 transition-colors"
             >
-              Cá Nước Ngọt
+              Cá 7 Màu Thuần Chủng
             </Link>
             <Link 
-              href="/products?waterType=saltwater" 
+              href="/products?category=accessories" 
               className="text-slate-700 hover:text-cyan-600 transition-colors"
             >
-              Cá Nước Mặn (San Hô)
+              Lồng Ép & Phụ Kiện
             </Link>
             <Link 
               href="/blog" 
               className={`transition-colors hover:text-teal-600 ${pathname.startsWith('/blog') ? 'text-teal-600 font-bold' : 'text-slate-700'}`}
             >
-              Cẩm Nang Nuôi Cá
+              Cẩm Nang Nuôi Guppy
             </Link>
             {isAdmin && (
               <Link 
@@ -235,28 +235,28 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="block text-sm text-slate-800 hover:text-teal-600 font-bold py-1"
           >
-            Tất Cả Sản Phẩm
+            Cửa Hàng Guppy
           </Link>
           <Link 
-            href="/products?waterType=freshwater" 
+            href="/products?category=fish" 
             onClick={() => setMobileMenuOpen(false)}
             className="block text-sm text-slate-700 hover:text-teal-600 py-1 font-medium"
           >
-            Cá Cảnh Nước Ngọt
+            Cá 7 Màu Thuần Chủng
           </Link>
           <Link 
-            href="/products?waterType=saltwater" 
+            href="/products?category=accessories" 
             onClick={() => setMobileMenuOpen(false)}
             className="block text-sm text-slate-700 hover:text-cyan-600 py-1 font-medium"
           >
-            Cá Nước Mặn San Hô
+            Lồng Ép & Phụ Kiện
           </Link>
           <Link 
             href="/blog" 
             onClick={() => setMobileMenuOpen(false)}
             className="block text-sm text-slate-700 hover:text-teal-600 py-1 font-medium"
           >
-            Cẩm Nang Thủy Sinh
+            Cẩm Nang Nuôi Guppy
           </Link>
           <Link 
             href="/account/orders" 

@@ -197,7 +197,7 @@ export default function CartPage() {
                   type="text"
                   value={inputCode}
                   onChange={(e) => setInputCode(e.target.value)}
-                  placeholder="Mã giảm giá (ví dụ: AQUAVIBE10)"
+                  placeholder="Mã giảm giá (ví dụ: GUPPY10)"
                   className="flex-1 px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-teal-500 focus:bg-white uppercase font-bold"
                 />
                 <button
@@ -228,7 +228,7 @@ export default function CartPage() {
             <div className="text-[11px] text-slate-500 space-y-1">
               <span className="block font-semibold text-slate-700">Mã có sẵn cho bạn:</span>
               <div className="flex flex-wrap gap-1.5">
-                {['AQUAVIBE10', 'FREESHIP', 'VIPAQUA'].map((code) => (
+                {['GUPPY10', 'FREESHIP', 'VIPAQUA'].map((code) => (
                   <button
                     key={code}
                     onClick={() => {

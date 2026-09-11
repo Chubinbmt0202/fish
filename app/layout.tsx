@@ -7,8 +7,8 @@ import Footer from '@/components/footer';
 import LiveChatWidget from '@/components/live-chat-widget';
 
 export const metadata: Metadata = {
-  title: 'AquaVibe - Cửa Hàng Thủy Sinh & Cá Cảnh Cao Cấp Toàn Quốc',
-  description: 'Nền tảng thương mại điện tử chuyên cung cấp cá cảnh cao cấp, tép kiểng, cây thủy sinh và phụ kiện. Cam kết đóng gói bơm Oxy y tế 99.5%, bảo hành sống 100% toàn quốc.',
+  title: 'GuppyVibe - Trại Cá 7 Màu Thuần Chủng & Cửa Hàng Guppy Toàn Quốc',
+  description: 'Trang thương mại chuyên các dòng cá 7 màu (Guppy) thuần chủng, F1, Ribbon, BDS cờ cao, lồng ép đẻ và thức ăn artemia. Cam kết đóng gói bơm Oxy y tế 99.5%, bảo hành sống 100% khi nhận hàng.',
 };
 
 export default function RootLayout({

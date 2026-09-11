@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       id: `msg-${Date.now()}`,
       sessionId,
       senderRole: senderRole || 'customer',
-      senderName: senderName || (senderRole === 'admin' ? 'Tư Vấn Viên AquaVibe' : 'Khách hàng'),
+      senderName: senderName || (senderRole === 'admin' ? 'Tư Vấn Viên GuppyVibe' : 'Khách hàng'),
       message,
       timestamp: new Date().toISOString(),
       read: senderRole === 'admin'
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
           id: `msg-${Date.now() + 1}`,
           sessionId,
           senderRole: 'admin',
-          senderName: 'Trợ Lý Thủy Sinh AI (AquaVibe)',
+          senderName: 'Trợ Lý Guppy AI (GuppyVibe)',
           message: botReply,
           timestamp: new Date(Date.now() + 800).toISOString(),
           read: true
@@ -68,14 +68,17 @@ export async function POST(request: Request) {
 
 function generateSmartAquariumAdvice(msg: string): string | null {
   const lower = msg.toLowerCase();
-  if (lower.includes('ship') || lower.includes('vận chuyển') || lower.includes('giao hàng') || lower.includes('xa')) {
-    return 'AquaVibe vận chuyển toàn quốc bằng thùng xốp cách nhiệt sục khí Oxy nguyên chất 99.5%, cam kết cá khỏe 100% khi nhận hàng. Shop đền bù hoặc gửi bù nếu có rủi ro!';
+  if (lower.includes('ship') || lower.includes('vận chuyển') || lower.includes('giao hàng') || lower.includes('xa') || lower.includes('oxy')) {
+    return 'GuppyVibe vận chuyển cá 7 màu toàn quốc bằng thùng xốp cách nhiệt, túi nilon 2 lớp sục Oxy y tế 99.5%, đảm bảo cá bơi khỏe 48 tiếng. Shop cam kết bảo hành cá sống 100% khi nhận hàng!';
   }
-  if (lower.includes('cho ăn') || lower.includes('thức ăn') || lower.includes('cám')) {
-    return 'Chào bạn, đối với cá cảnh mới về hồ, bạn nên nhịn ăn ngày đầu tiên để cá làm quen nước, từ ngày thứ 2 cho ăn lượng nhỏ cám chìm hoặc trùn chỉ sạch nhé!';
+  if (lower.includes('cho ăn') || lower.includes('thức ăn') || lower.includes('cám') || lower.includes('artemia') || lower.includes('lên màu')) {
+    return 'Để cá 7 màu (đặc biệt là Full Red, Full Gold) lên màu rực rỡ và đuôi bung to, bạn nên cho ăn ấu trùng Artemia ấp nở tươi sống kết hợp cám hạt nổi Inve 3/5 ngày 2 cữ vừa đủ nhé!';
   }
-  if (lower.includes('nước mặn') || lower.includes('hải quỳ') || lower.includes('nemo')) {
-    return 'Các dòng cá nước mặn như Cá Hề Nemo cần độ mặn từ 1.023 - 1.025 và nhiệt độ 25-27 độ C. Shop có sẵn muối pha san hô cao cấp!';
+  if (lower.includes('đẻ') || lower.includes('sinh sản') || lower.includes('cá con') || lower.includes('ép đẻ')) {
+    return 'Khi cá 7 màu mái bụng vuông và hiện điểm đen mắt thai nhi gần hậu môn, bạn nên tách ngay vào lồng ép đẻ mica 2 tầng hoặc hồ có nhiều rong đuôi chồn để tránh cá mẹ ăn cá con nhé!';
   }
-  return 'Cảm ơn quý khách đã liên hệ AquaVibe! Chuyên viên chăm sóc cá cảnh đang xem tin nhắn và sẽ phản hồi chi tiết ngay trong giây lát.';
+  if (lower.includes('túm') || lower.includes('lắc') || lower.includes('nấm') || lower.includes('bệnh') || lower.includes('muối')) {
+    return 'Nếu cá 7 màu bị túm đuôi lắc mình, hãy bổ sung 1 thìa cafe muối hột/10L nước, cắm sưởi 28-30°C và thay 20% nước sạch. Tránh nước máy clo nồng độ cao!';
+  }
+  return 'Cảm ơn quý khách đã liên hệ GuppyVibe! Chuyên viên chăm sóc và tuyển chọn cá 7 màu đang xem tin nhắn và sẽ phản hồi chi tiết ngay trong giây lát.';
 }

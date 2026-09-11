@@ -253,7 +253,7 @@ export default function ProductDetailPage() {
               <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
                 <span className="text-slate-500 block text-[11px] font-medium">Nguồn gốc giống:</span>
                 <span className="text-slate-900 font-bold mt-0.5 block truncate">
-                  {product.origin || 'Thuần dưỡng AquaVibe'}
+                  {product.origin || 'Trại Giống GuppyVibe'}
                 </span>
               </div>
             </div>

@@ -48,39 +48,40 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-teal-600 flex items-center justify-center text-white font-bold">
                 <Fish className="w-5 h-5" />
               </div>
-              <span className="text-lg font-extrabold text-slate-900">AquaVibe Vietnam</span>
+              <span className="text-lg font-extrabold text-slate-900">GuppyVibe Vietnam</span>
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Thiên đường cá cảnh và thế giới thủy sinh cao cấp. Cung cấp đầy đủ các dòng cá quý, cây thủy sinh, bể kính siêu trong và phụ kiện lọc hàng đầu.
+              Trại cá 7 màu thuần chủng và phụ kiện Guppy chuyên nghiệp hàng đầu Việt Nam. Cung cấp các dòng cá Full Red, Full Gold, Koi Red Ear, Blue Topaz, lồng ép đẻ và thức ăn artemia cao cấp.
             </p>
           </div>
 
           <div>
-            <h4 className="text-slate-900 font-bold mb-3 text-xs uppercase tracking-wider">Danh Mục Sản Phẩm</h4>
+            <h4 className="text-slate-900 font-bold mb-3 text-xs uppercase tracking-wider">Dòng Cá 7 Màu (Guppy)</h4>
             <ul className="space-y-2 text-xs font-medium">
-              <li><Link href="/products?category=fish" className="hover:text-teal-600 transition-colors">Cá Cảnh Nước Ngọt & Biển</Link></li>
-              <li><Link href="/products?category=shrimp_snail" className="hover:text-teal-600 transition-colors">Tép Cảnh & Ốc Ăn Rêu</Link></li>
-              <li><Link href="/products?category=plants" className="hover:text-teal-600 transition-colors">Cây Thủy Sinh & Bucephalandra</Link></li>
-              <li><Link href="/products?category=accessories" className="hover:text-teal-600 transition-colors">Lọc Thùng & Đèn Thủy Sinh WRGB</Link></li>
+              <li><Link href="/products?search=Full%20Red" className="hover:text-teal-600 transition-colors">Dòng Albino Full Red (AFR)</Link></li>
+              <li><Link href="/products?search=Full%20Gold" className="hover:text-teal-600 transition-colors">Dòng Full Gold 24K Ribbon</Link></li>
+              <li><Link href="/products?search=Koi" className="hover:text-teal-600 transition-colors">Dòng Albino Koi Red Ear</Link></li>
+              <li><Link href="/products?search=Dumbo" className="hover:text-teal-600 transition-colors">Dòng Tai To Dumbo Red Tail</Link></li>
+              <li><Link href="/products?category=accessories" className="hover:text-teal-600 transition-colors">Lồng Ép Đẻ & Thức Ăn Artemia</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-slate-900 font-bold mb-3 text-xs uppercase tracking-wider">Hỗ Trợ & Hướng Dẫn</h4>
+            <h4 className="text-slate-900 font-bold mb-3 text-xs uppercase tracking-wider">Kỹ Thuật & Cẩm Nang</h4>
             <ul className="space-y-2 text-xs font-medium">
-              <li><Link href="/blog" className="hover:text-teal-600 transition-colors">Cẩm nang thả cá & Cycle vi sinh</Link></li>
-              <li><Link href="/blog/quy-trinh-dong-goi-oxy-ca-song-an-toan" className="hover:text-teal-600 transition-colors">Quy chuẩn đóng gói thùng Oxy</Link></li>
+              <li><Link href="/blog/cam-nang-nuoi-va-phoi-giong-ca-7-mau-guppy" className="hover:text-teal-600 transition-colors">Kỹ thuật dưỡng nước & ép đẻ Guppy</Link></li>
+              <li><Link href="/blog/quy-trinh-dong-goi-oxy-ca-song-an-toan" className="hover:text-teal-600 transition-colors">Quy chuẩn sục Oxy đóng thùng xốp 48h</Link></li>
               <li><Link href="/account/orders" className="hover:text-teal-600 transition-colors">Kiểm tra tiến trình đơn hàng</Link></li>
-              <li><Link href="/admin" className="text-cyan-700 hover:text-cyan-800 font-bold transition-colors">Cổng Quản Trị Admin</Link></li>
+              <li><Link href="/admin" className="text-cyan-700 hover:text-cyan-800 font-bold transition-colors">Cổng Quản Trị Trại Cá</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-slate-900 font-bold mb-3 text-xs uppercase tracking-wider">Liên Hệ Cửa Hàng</h4>
+            <h4 className="text-slate-900 font-bold mb-3 text-xs uppercase tracking-wider">Trại Giống & Cửa Hàng</h4>
             <ul className="space-y-2 text-xs font-medium">
               <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-teal-600 shrink-0" /> 124 Nguyễn Thị Minh Khai, Q.3, TP.HCM</li>
               <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-teal-600 shrink-0" /> Hotline: 1900 6868 (8:00 - 21:00)</li>
-              <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-teal-600 shrink-0" /> contact@aquavibe.vn</li>
+              <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-teal-600 shrink-0" /> contact@guppyvibe.vn</li>
             </ul>
           </div>
 
@@ -88,9 +89,9 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© 2026 AquaVibe Thủy Cung Xanh. All rights reserved.</p>
+          <p>© 2026 GuppyVibe - Trại Cá 7 Màu Thuần Chủng. All rights reserved.</p>
           <div className="flex items-center gap-1">
-            <span>Xây dựng với tình yêu thủy sinh</span>
+            <span>Dành trọn đam mê cho dòng cá 7 màu</span>
             <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
           </div>
         </div>
